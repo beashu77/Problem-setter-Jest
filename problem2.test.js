@@ -1,6 +1,6 @@
 const dataPromoted = require("./problem2");
 describe("you are given list of promoted and not promoted students.", () => {
-  test.skip("List promoted and not promoted", () => {
+  test("List promoted and not promoted", () => {
     let data = [
         {
           name: "Hewie",
