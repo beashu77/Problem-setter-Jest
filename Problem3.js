@@ -1,12 +1,11 @@
-const axios =require("axios")
+const axios = require("axios");
 
-function getData(endpoint) {
-    axios
-  .get(`http://localhost:8080${endpoint}`)
-  .then(function (response) {
-    console.log(response);
-    return response
-  });
-  }
+function fetchAlbum () {
+  return axios
+    .get("http://localhost:8080/houses")
+    .then((response) => {
+      return response.data;
+    });
+ };
 
-module.exports = getData;
+ module.exports= fetchAlbum;
