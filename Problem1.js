@@ -1,5 +1,7 @@
  function prime(arr) {
   
+
+  
   let ans = [];
   for (let i = 0; i < arr.length; i++) {
     let count = 0;
